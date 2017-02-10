@@ -220,26 +220,8 @@ public class LoginFlowErrorUtils {
         }
     }
 
-    public static int getMembershipExpirationError(String expirationDate, @StringRes int error) throws ParseException {
-        if (isExpirationDateValid(expirationDate)) {
-            return NO_ERROR;
-        } else {
-            return error;
-        }
-    }
-
     private static boolean isDobValid(String dob) throws ParseException {
         Date date = new SimpleDateFormat("MM/dd/yyyy").parse(dob);
         return new Date().before(date);
-    }
-
-    private static boolean isExpirationMonthYearValid(String expirationDate) throws ParseException {
-        Date date = new SimpleDateFormat("MM/yy").parse(expirationDate);
-        return new Date().after(date);
-    }
-
-    public static boolean isExpirationDateValid(String expirationDate) throws ParseException {
-        Date date = new SimpleDateFormat("MM/dd/yyyy").parse(expirationDate);
-        return new Date().after(date);
     }
 }
