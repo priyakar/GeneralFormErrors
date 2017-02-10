@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GeneralFormErrors</string>
+    <string name="error_password_length_too_short">Password should be at least 6 characters long</string>
+    <string name="error_password_length_too_long">Password cannot be more than 30 characters long</string>
+    <string name="error_password_is_word_password">Password cannot be the word password</string>
+    <string name="error_password_do_not_contain_one_letter_and_one_number">Password must contain one letter and one number</string>
+    <string name="error_password_contain_disallowed_characters">Please enter only letters, number and special characters</string>
+</resources>
